@@ -1,0 +1,27 @@
+<div class="mb-3">
+  <label for="title">Title</label>
+  <input
+    required
+    value="<%= blogs.title %>"
+    type="text"
+    name="title"
+    id="title"
+    class="form-control"
+  />
+</div>
+<div class="mb-3">
+  <label for="shortDescription">Short Description</label>
+  <textarea name="shortDescription" id="shortDescription" class="form-control">
+      <%= blogs.shortDescription %> 
+    </textarea
+  >
+</div>
+<div class="mb-3 form-check">
+  <label for="blogContent">Blog Content</label>
+  <textarea name="blogContent" id="blogContent" class="form-control" required>
+      <%= blogs.blogContent %> 
+    </textarea
+  >
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
