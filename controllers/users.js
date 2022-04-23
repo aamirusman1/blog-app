@@ -1,3 +1,4 @@
+const Blog = require('./../models/dbSchema');
 
 exports.getaddBlog = (req,res)=>{
     res.render('addBlog',{ blogs: new Blog() })
